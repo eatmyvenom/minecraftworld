@@ -1,0 +1,147 @@
+[10:36:22] [Server thread/WARN]: To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+[10:36:22] [Server thread/INFO]: Loading properties
+[10:36:22] [Server thread/INFO]: Default game type: SURVIVAL
+[10:36:22] [Server thread/INFO]: Generating keypair
+[10:36:22] [Server thread/INFO]: Starting Minecraft server on *:25565
+[10:36:22] [Server thread/INFO]: Using default channel type
+[10:36:23] [Server thread/INFO]: This server is running CraftBukkit version git-Bukkit-31adfa7 (MC: 1.14.4) (Implementing API version 1.14.4-R0.1-SNAPSHOT)
+[10:36:26] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v7.0.0;214af8a
+[10:36:27] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@3816be3b]
+[10:36:27] [Server thread/INFO]: [NBTEditor] Loading NBTEditor v3.1
+[10:36:27] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.0.0;214af8a
+[10:36:27] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[10:36:27] [Server thread/WARN]: [WorldEdit] ====================================================
+[10:36:27] [Server thread/WARN]: [WorldEdit]  WorldEdit works better if you use Paper 
+[10:36:27] [Server thread/WARN]: [WorldEdit]  as your server software. 
+[10:36:27] [Server thread/WARN]: [WorldEdit]   
+[10:36:27] [Server thread/WARN]: [WorldEdit]  Paper offers significant performance improvements,
+[10:36:27] [Server thread/WARN]: [WorldEdit]  bug fixes, security enhancements and optional
+[10:36:27] [Server thread/WARN]: [WorldEdit]  features for server owners to enhance their server.
+[10:36:27] [Server thread/WARN]: [WorldEdit]   
+[10:36:27] [Server thread/WARN]: [WorldEdit]  Paper includes Timings v2, which is significantly
+[10:36:27] [Server thread/WARN]: [WorldEdit]  better at diagnosing lag problems over v1.
+[10:36:27] [Server thread/WARN]: [WorldEdit]   
+[10:36:27] [Server thread/WARN]: [WorldEdit]  All of your plugins should still work, and the
+[10:36:27] [Server thread/WARN]: [WorldEdit]  Paper community will gladly help you fix any issues.
+[10:36:27] [Server thread/WARN]: [WorldEdit]   
+[10:36:27] [Server thread/WARN]: [WorldEdit]  Join the Paper Community @ https://papermc.io
+[10:36:27] [Server thread/WARN]: [WorldEdit] ====================================================
+[10:36:27] [Server thread/INFO]: Preparing level "world"
+[10:36:27] [Server thread/INFO]: Reloading ResourceManager: Default, custom, bukkit
+[10:36:27] [Server thread/INFO]: Loaded 6 recipes
+[10:36:27] [Server thread/INFO]: Loaded 5 custom command functions
+[10:36:28] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_14_R2 as the Bukkit adapter
+[10:36:29] [Server thread/WARN]: Failed to load the built-in legacy id registry
+java.lang.NoSuchMethodError: net.minecraft.server.v1_14_R1.IBlockState.d()Ljava/util/Collection;
+	at com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_14_R2.getProperties(Spigot_v1_14_R2.java:398) ~[worldedit-bukkit-7.0.0%20(1).jar:?]
+	at com.sk89q.worldedit.bukkit.BukkitBlockRegistry.getProperties(BukkitBlockRegistry.java:52) ~[worldedit-bukkit-7.0.0%20(1).jar:?]
+	at com.sk89q.worldedit.world.block.BlockType.lambda$getPropertyMap$1(BlockType.java:121) ~[worldedit-bukkit-7.0.0%20(1).jar:?]
+	at com.sk89q.worldedit.world.block.BlockType.updateField(BlockType.java:74) ~[worldedit-bukkit-7.0.0%20(1).jar:?]
+	at com.sk89q.worldedit.world.block.BlockType.getPropertyMap(BlockType.java:120) ~[worldedit-bukkit-7.0.0%20(1).jar:?]
+	at com.sk89q.worldedit.extension.factory.parser.DefaultBlockParser.parseProperties(DefaultBlockParser.java:171) ~[worldedit-bukkit-7.0.0%20(1).jar:?]
+	at com.sk89q.worldedit.extension.factory.parser.DefaultBlockParser.parseLogic(DefaultBlockParser.java:314) ~[worldedit-bukkit-7.0.0%20(1).jar:?]
+	at com.sk89q.worldedit.extension.factory.parser.DefaultBlockParser.parseFromInput(DefaultBlockParser.java:88) ~[worldedit-bukkit-7.0.0%20(1).jar:?]
+	at com.sk89q.worldedit.extension.factory.parser.DefaultBlockParser.parseFromInput(DefaultBlockParser.java:61) ~[worldedit-bukkit-7.0.0%20(1).jar:?]
+	at com.sk89q.worldedit.internal.registry.AbstractFactory.parseFromInput(AbstractFactory.java:73) ~[worldedit-bukkit-7.0.0%20(1).jar:?]
+	at com.sk89q.worldedit.world.registry.LegacyMapper.loadFromResource(LegacyMapper.java:99) ~[worldedit-bukkit-7.0.0%20(1).jar:?]
+	at com.sk89q.worldedit.world.registry.LegacyMapper.<init>(LegacyMapper.java:66) [worldedit-bukkit-7.0.0%20(1).jar:?]
+	at com.sk89q.worldedit.world.registry.LegacyMapper.getInstance(LegacyMapper.java:179) [worldedit-bukkit-7.0.0%20(1).jar:?]
+	at com.sk89q.worldedit.WorldEdit.loadMappings(WorldEdit.java:367) [worldedit-bukkit-7.0.0%20(1).jar:?]
+	at com.sk89q.worldedit.bukkit.WorldEditPlugin.setupWorldData(WorldEditPlugin.java:153) [worldedit-bukkit-7.0.0%20(1).jar:?]
+	at com.sk89q.worldedit.bukkit.WorldEditPlugin.access$100(WorldEditPlugin.java:89) [worldedit-bukkit-7.0.0%20(1).jar:?]
+	at com.sk89q.worldedit.bukkit.WorldEditPlugin$WorldInitListener.onWorldInit(WorldEditPlugin.java:466) [worldedit-bukkit-7.0.0%20(1).jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_211]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_211]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_211]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_211]
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:310) [server.jar:git-Bukkit-31adfa7]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) [server.jar:git-Bukkit-31adfa7]
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:528) [server.jar:git-Bukkit-31adfa7]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:513) [server.jar:git-Bukkit-31adfa7]
+	at net.minecraft.server.v1_14_R1.MinecraftServer.a(MinecraftServer.java:425) [server.jar:git-Bukkit-31adfa7]
+	at net.minecraft.server.v1_14_R1.DedicatedServer.init(DedicatedServer.java:243) [server.jar:git-Bukkit-31adfa7]
+	at net.minecraft.server.v1_14_R1.MinecraftServer.run(MinecraftServer.java:752) [server.jar:git-Bukkit-31adfa7]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_211]
+[10:36:29] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[10:36:29] [Server thread/INFO]: Preparing start region for dimension 'world'/minecraft:overworld
+[10:36:29] [Server thread/INFO]: Preparing spawn area: 0%
+[10:36:29] [Server thread/INFO]: Preparing spawn area: 0%
+[10:36:30] [Server thread/INFO]: Time elapsed: 1037 ms
+[10:36:30] [Server thread/INFO]: Preparing start region for dimension 'world_nether'/minecraft:the_nether
+[10:36:30] [Server thread/INFO]: Preparing spawn area: 0%
+[10:36:30] [Server thread/INFO]: Preparing spawn area: 0%
+[10:36:31] [Server thread/INFO]: Time elapsed: 876 ms
+[10:36:31] [Server thread/INFO]: Preparing start region for dimension 'world_the_end'/minecraft:the_end
+[10:36:31] [Server thread/INFO]: Preparing spawn area: 0%
+[10:36:31] [Server-Worker-4/INFO]: Preparing spawn area: 94%
+[10:36:31] [Server thread/INFO]: Time elapsed: 581 ms
+[10:36:31] [Server thread/INFO]: [NBTEditor] Enabling NBTEditor v3.1
+[10:36:31] [Server thread/ERROR]: [NBTEditor] Error preparing reflection objects
+java.lang.RuntimeException: Error while preparing NBT wrapper classes.
+	at com.goncalomb.bukkit.mylib.reflect.NBTBase.prepareReflection(NBTBase.java:52) ~[nbteditor-3.1.jar:?]
+	at com.goncalomb.bukkit.nbteditor.NBTEditor.onEnable(NBTEditor.java:70) [nbteditor-3.1.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263) [server.jar:git-Bukkit-31adfa7]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:344) [server.jar:git-Bukkit-31adfa7]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:416) [server.jar:git-Bukkit-31adfa7]
+	at org.bukkit.craftbukkit.v1_14_R1.CraftServer.enablePlugin(CraftServer.java:447) [server.jar:git-Bukkit-31adfa7]
+	at org.bukkit.craftbukkit.v1_14_R1.CraftServer.enablePlugins(CraftServer.java:373) [server.jar:git-Bukkit-31adfa7]
+	at net.minecraft.server.v1_14_R1.MinecraftServer.a(MinecraftServer.java:440) [server.jar:git-Bukkit-31adfa7]
+	at net.minecraft.server.v1_14_R1.DedicatedServer.init(DedicatedServer.java:243) [server.jar:git-Bukkit-31adfa7]
+	at net.minecraft.server.v1_14_R1.MinecraftServer.run(MinecraftServer.java:752) [server.jar:git-Bukkit-31adfa7]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_211]
+Caused by: java.lang.NoSuchMethodException: net.minecraft.server.v1_14_R1.ChunkRegionLoader.a(net.minecraft.server.v1_14_R1.NBTTagCompound, net.minecraft.server.v1_14_R1.World, double, double, double, boolean)
+	at java.lang.Class.getMethod(Unknown Source) ~[?:1.8.0_211]
+	at com.goncalomb.bukkit.mylib.reflect.NBTUtils.prepareReflection(NBTUtils.java:111) ~[?:?]
+	at com.goncalomb.bukkit.mylib.reflect.NBTBase.prepareReflection(NBTBase.java:50) ~[?:?]
+	... 10 more
+[10:36:31] [Server thread/ERROR]: [NBTEditor] This version of NBTEditor is not compatible with this version of Bukkit
+[10:36:31] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[10:36:32] [Server thread/INFO]: Done (4.860s)! For help, type "help"
+[10:36:32] [Server thread/INFO]: Starting GS4 status listener
+[10:36:32] [Query Listener #1/INFO]: Query running on 0.0.0.0:25565
+[10:37:54] [Server thread/INFO]: com.mojang.authlib.GameProfile@1675c2ed[id=<null>,name=EatMyVenom,properties={},legacy=false] (/127.0.0.1:59095) lost connection: Disconnected
+[10:40:29] [Server thread/INFO]: com.mojang.authlib.GameProfile@54487dc6[id=<null>,name=EatMyVenom,properties={},legacy=false] (/127.0.0.1:59783) lost connection: Disconnected
+[10:43:02] [User Authenticator #1/INFO]: UUID of player EatMyVenom is 5ec59f35-7284-4dd6-ad0f-5e88abf176a8
+[10:43:02] [Server thread/INFO]: EatMyVenom[/127.0.0.1:60460] logged in with entity id 357 at ([world]52.660469888995316, 11.0, 188.53452514650166)
+[10:43:04] [Server thread/ERROR]: Couldn't register custom payload
+org.bukkit.plugin.messaging.ChannelNameTooLongException: Attempted to send a Plugin Message to a channel that was too large. The maximum length a channel may be is 32 chars (attempted 35 - 'enchantedtooltips:genenchant_packet.
+	at org.bukkit.plugin.messaging.StandardMessenger.validateAndCorrectChannel(StandardMessenger.java:500) ~[server.jar:git-Bukkit-31adfa7]
+	at org.bukkit.craftbukkit.v1_14_R1.entity.CraftPlayer.addChannel(CraftPlayer.java:1255) ~[server.jar:git-Bukkit-31adfa7]
+	at net.minecraft.server.v1_14_R1.PlayerConnection.a(PlayerConnection.java:2382) ~[server.jar:git-Bukkit-31adfa7]
+	at net.minecraft.server.v1_14_R1.PacketPlayInCustomPayload.a(SourceFile:45) ~[server.jar:git-Bukkit-31adfa7]
+	at net.minecraft.server.v1_14_R1.PacketPlayInCustomPayload.a(SourceFile:9) ~[server.jar:git-Bukkit-31adfa7]
+	at net.minecraft.server.v1_14_R1.PlayerConnectionUtils.lambda$0(PlayerConnectionUtils.java:19) ~[server.jar:git-Bukkit-31adfa7]
+	at net.minecraft.server.v1_14_R1.TickTask.run(SourceFile:18) [server.jar:git-Bukkit-31adfa7]
+	at net.minecraft.server.v1_14_R1.IAsyncTaskHandler.executeTask(SourceFile:144) [server.jar:git-Bukkit-31adfa7]
+	at net.minecraft.server.v1_14_R1.IAsyncTaskHandlerReentrant.executeTask(SourceFile:23) [server.jar:git-Bukkit-31adfa7]
+	at net.minecraft.server.v1_14_R1.IAsyncTaskHandler.executeNext(SourceFile:118) [server.jar:git-Bukkit-31adfa7]
+	at net.minecraft.server.v1_14_R1.MinecraftServer.aX(MinecraftServer.java:866) [server.jar:git-Bukkit-31adfa7]
+	at net.minecraft.server.v1_14_R1.MinecraftServer.executeNext(MinecraftServer.java:859) [server.jar:git-Bukkit-31adfa7]
+	at net.minecraft.server.v1_14_R1.IAsyncTaskHandler.executeAll(SourceFile:103) [server.jar:git-Bukkit-31adfa7]
+	at net.minecraft.server.v1_14_R1.MinecraftServer.sleepForTick(MinecraftServer.java:842) [server.jar:git-Bukkit-31adfa7]
+	at net.minecraft.server.v1_14_R1.MinecraftServer.run(MinecraftServer.java:783) [server.jar:git-Bukkit-31adfa7]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_211]
+[10:43:04] [Server thread/INFO]: EatMyVenom lost connection: Invalid payload REGISTER!
+[10:43:04] [Server thread/INFO]: EatMyVenom left the game
+[10:43:17] [User Authenticator #2/INFO]: UUID of player EatMyVenom is 5ec59f35-7284-4dd6-ad0f-5e88abf176a8
+[10:43:18] [Server thread/INFO]: EatMyVenom[/127.0.0.1:60466] logged in with entity id 415 at ([world]52.660469888995316, 11.0, 188.53452514650166)
+[10:43:20] [Server thread/ERROR]: Couldn't register custom payload
+org.bukkit.plugin.messaging.ChannelNameTooLongException: Attempted to send a Plugin Message to a channel that was too large. The maximum length a channel may be is 32 chars (attempted 35 - 'enchantedtooltips:genenchant_packet.
+	at org.bukkit.plugin.messaging.StandardMessenger.validateAndCorrectChannel(StandardMessenger.java:500) ~[server.jar:git-Bukkit-31adfa7]
+	at org.bukkit.craftbukkit.v1_14_R1.entity.CraftPlayer.addChannel(CraftPlayer.java:1255) ~[server.jar:git-Bukkit-31adfa7]
+	at net.minecraft.server.v1_14_R1.PlayerConnection.a(PlayerConnection.java:2382) ~[server.jar:git-Bukkit-31adfa7]
+	at net.minecraft.server.v1_14_R1.PacketPlayInCustomPayload.a(SourceFile:45) ~[server.jar:git-Bukkit-31adfa7]
+	at net.minecraft.server.v1_14_R1.PacketPlayInCustomPayload.a(SourceFile:9) ~[server.jar:git-Bukkit-31adfa7]
+	at net.minecraft.server.v1_14_R1.PlayerConnectionUtils.lambda$0(PlayerConnectionUtils.java:19) ~[server.jar:git-Bukkit-31adfa7]
+	at net.minecraft.server.v1_14_R1.TickTask.run(SourceFile:18) [server.jar:git-Bukkit-31adfa7]
+	at net.minecraft.server.v1_14_R1.IAsyncTaskHandler.executeTask(SourceFile:144) [server.jar:git-Bukkit-31adfa7]
+	at net.minecraft.server.v1_14_R1.IAsyncTaskHandlerReentrant.executeTask(SourceFile:23) [server.jar:git-Bukkit-31adfa7]
+	at net.minecraft.server.v1_14_R1.IAsyncTaskHandler.executeNext(SourceFile:118) [server.jar:git-Bukkit-31adfa7]
+	at net.minecraft.server.v1_14_R1.MinecraftServer.aX(MinecraftServer.java:866) [server.jar:git-Bukkit-31adfa7]
+	at net.minecraft.server.v1_14_R1.MinecraftServer.executeNext(MinecraftServer.java:859) [server.jar:git-Bukkit-31adfa7]
+	at net.minecraft.server.v1_14_R1.IAsyncTaskHandler.executeAll(SourceFile:103) [server.jar:git-Bukkit-31adfa7]
+	at net.minecraft.server.v1_14_R1.MinecraftServer.sleepForTick(MinecraftServer.java:842) [server.jar:git-Bukkit-31adfa7]
+	at net.minecraft.server.v1_14_R1.MinecraftServer.run(MinecraftServer.java:783) [server.jar:git-Bukkit-31adfa7]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_211]
+[10:43:20] [Server thread/INFO]: EatMyVenom lost connection: Invalid payload REGISTER!
+[10:43:20] [Server thread/INFO]: EatMyVenom left the game

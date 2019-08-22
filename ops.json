@@ -1,0 +1,14 @@
+[
+  {
+    "uuid": "5ec59f35-7284-4dd6-ad0f-5e88abf176a8",
+    "name": "EatMyVenom",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "2e9f14e2-dc6c-4b3f-826c-838fb413fc36",
+    "name": "ChowMoo",
+    "level": 2,
+    "bypassesPlayerLimit": false
+  }
+]
